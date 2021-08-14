@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <input class="movies__input" type="search" placeholder="Qidiring" />
+
+    <button class="prev-btn">prev</button>
+    <button class="next-btn">next</button>
+
+    <form class="movies__form">
+      <select class="movie__type">
+        <option value="all">All</option>
+        <option value="movie">Movie</option>
+        <option value="series">Series</option>
+      </select>
+
+      <button class="movie-submit">Submit</button>
+    </form>
+
+    <ul class="list"></ul>
+
+    <template id="movie__template">
+      <li class="movie">
+        <img
+          class="movie__img"
+          src="https://via.placeholder.com/100x150"
+          alt="Template img"
+          width="100"
+          height="150"
+        />
+        <h3 class="movie__title">Title</h3>
+        <p class="movie__type">Type</p>
+        <p class="movie__year">1999</p>
+        <p class="movie__imdbid">1999</p>
+      </li>
+    </template>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
